@@ -15,6 +15,7 @@ class Battlefield:
 
     def display_welcome(self):
         print(f'A wild {self.bushel.mons[0].name} appears.')
+        print("I choose you! Hercules!")
 
     def battle(self):
         herc_health = self.herc.health
