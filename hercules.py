@@ -2,10 +2,10 @@ from moves import Moves
 
 class Hercules:
     def __init__(self):
-        self.health = 100
+        self.health = 99
         self.att_dam = 0
         self.moveset = [Moves("Smol Punch", 20)]
-        self.pot_move = [Moves("Big Punch", 40),Moves("Heal Punch", 20), Moves("Guard Punch", 00), Moves("Hyper Beam"), 100]
+        self.pot_move = [Moves("Big Punch", 40),Moves("Heal Punch", 20), Moves("Guard Punch", 00), Moves("Hyper Beam", 100)]
 
     def attack(self):
         confirm = 0

@@ -9,6 +9,7 @@ class Monster:
         self.moveset = moveset
 
     def attack(self):
-        num = randint[0,2]
-        self.add_dam = self.moveset[num].attack_power
-        print(f'{self.name} attacks with {self.moveset[num]} for {self.moveset[num].attack_power} damage')
+        num = randint(0,2)
+        damage = self.moveset[num].attack_power
+        self.att_dam = damage
+        print(f'{self.name} attacks with {self.moveset[num].name} for {self.moveset[num].attack_power} damage')
