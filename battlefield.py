@@ -31,7 +31,7 @@ class Battlefield:
                 self.herc_turn()
                 counter = 2
                 mon_health = self.bushel.mons[0].health
-                print(f'Goblin has {mon_health} HP left')
+                print(f'{self.bushel.mons[0].name} has {mon_health} HP left')
 
     def herc_turn(self):
         self.herc.attack()
