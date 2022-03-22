@@ -21,15 +21,3 @@
 # As a developer, I want all of my functions to have a Single 
 # Responsibility. Remember, each function should do just one thing!  
  
-from character import Character
-import random
-
-hercules = Character("Hercules", 100, 42)
-hercules.add_move("Smol Punch", 1, 0, 0)
-hercules.add_move("Big Punch", 2, 0, 3)
-hercules.add_move("Heal Punch", 0, 1, 0)
-hercules.add_move("Metronome", random.randint(0, 3), random.randint(0,3), 5)
-
-goblin = Character("Goblin", 50, 7)
-goblin.add_move("Smol_punch", hercules.attack, 0, 1, "You do a smol punch")
-hercules.add_move("Heal_punch", 0, hercules.attack, 1, "You do a heal punch")
