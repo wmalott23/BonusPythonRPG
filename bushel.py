@@ -3,8 +3,9 @@ from moves import Moves
 from random import randint
 
 class Bushel:
-    def __init__(self):
+    def __init__(self, gen_num):
         self.mons = []
+        self.gen_mon(gen_num)
 
     def gen_mon(self, set_num):
         if set_num == 1:
