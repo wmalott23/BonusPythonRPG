@@ -45,7 +45,8 @@ class Battlefield:
         herc_health = self.herc.health
         mon_health = self.bushel.mons[0].health
         if herc_health <= 0:
-            print("Hercules has died :(")
+            print("Hercules has died :(. Please try again!")
+            self.run_match()
         if mon_health <= 0:
             print("Hercules is victorious!")
 
@@ -54,6 +55,3 @@ class Battlefield:
         rew = randint(0,4)
         if rew == 4:
             self.herc.add_move()
-
-start = Battlefield(1)
-start.run_match()

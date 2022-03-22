@@ -2,7 +2,16 @@ from battlefield import Battlefield
 
 class Storyline:
     def __init__(self):
-        self.battle = Battlefield
+        self.battle_one = Battlefield(1)
+        self.battle_two = Battlefield(2)
+        self.battle_three = Battlefield(3)
+        self.battle_four = Battlefield(4)
+        self.battle_five = Battlefield(5)
+        self.battle_six = Battlefield(6)
+
+    def run_game(self):
+        self.intro()
+        self.nem_lion()
 
     def intro(self):
         print("Zeus was a young boy from Pallet Town. Tomorrow, Zeus will turn 10 years old and finally be able to get his Pokemon License")
@@ -91,11 +100,61 @@ class Storyline:
 
 
     def nem_lion(self):
-        print("As Zeus wanders around in the woods nearby Pallet Town with Zeus, he is whispering to himself")
+        print("As Zeus wanders around in the woods nearby Pallet Town with Hercules in tow, he is whispering to himself")
         input("press any key to continue")
         print("Zeus: I really shouldn't have run off without asking for directions first.")
         input("press any key to continue")
-        print("As Zeus looks around, he sees something that looks like a ")
+        print("As Zeus looks around, he sees something that looks like a rack of lamb, hanging from a string...in the middle of the woods")
+        input("press any key to continue")
+        print("Zeus: Oh Boy! Just what I needed! I am so hungry from walking around in these woods!")
+        input("press any key to continue")
+        print("Hercules reaches out to try to stop Zeus but its too late. Zeus grabs onto the lamb.")
+        input("press any key to continue")
+        print("Immediately, the ground underneath Zeus disappears and Zeus falls into a pitfall")
+        input("press any key to continue")
+        print("Hercules rushes over to the hole and looks inside to see Zeus incapacitated on the ground")
+        input("press any key to continue")
+        print("Soon after rushing over to see if Zeus was ok, a monster hops out from behind a bush!")
+        input("press any key to continue")
+        self.battle_one.run_match()
+        print("Gah! The surprise enemy yells as he is beaten")
+        input("press any key to continue")
+        print("Zeus crawls out of the hole, and lays down at the top of the hole for a second, catching his breathe")
+        input("press any key to continue")
+        print("Great job Hercules! You really showed that Goblin who was boss!")
+        input("press any key to continue")
+        print("Suddenly, another Goblin jumps out from behind another bush!")
+        input("press any key to continue")
+        self.battle_one.run_match()
+        print("Zeus: Great hit Hercules, but we have to get out of here before we get swarmed by more of those goblin pokemon!")
+        input("press any key to continue")
+        print("Zeus and Hercules hurry out of the woods as fast as they can, trying to get away before any more goblins appear")
+        input("press any key to continue")
+        print("Eventually, they stumble out of the woods and into a clearing")
+        input("press any key to continue")
+        print("In the middle of the clearing is a giant statue of a lion")
+        input("press any key to continue")
+        print("Zeus: Whoa Hercules! We must be close to the Nemeaen Lion that that guy was talking about!")
+        input("press any key to continue")
+        print("The pair walk slowly up to the statue, wary that more goblins might be just around the corner")
+        input("press any key to continue")
+        print("Goblin Attack! They were not wary enough!")
+        input("press any key to continue")
+        self.battle_one.run_match()
+        print("Ok, these goblins have to stop attack us, this is getting kind of old")
+        input("press any key to continue")
+        print("Zeus did not realize, but during the scuffle between Hercules and the Goblin, the statue had come to life!")
+        input("press any key to continue")
+        print("Nemeaeaeaen Lion attack!")
+        self.battle_four.run_match()
+        print("The pair successful defeated the Nemeaeeaeaeaean Lion!")
+        input("press any key to continue")
+        print("Zeus: Great job Hercules!")
+        input("press any key to continue")
+        print("Hercules: HERCULES!")
+        input("press any key to continue")
+
+
 
     def lern_hydra(self):
         pass
@@ -105,3 +164,6 @@ class Storyline:
 
     def end(self):
         pass
+
+story = Storyline()
+story.run_game()
