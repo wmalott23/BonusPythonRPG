@@ -44,12 +44,12 @@ class Battlefield:
     def display_winners(self):
         herc_health = self.herc.health
         mon_health = self.bushel.mons[0].health
-        if herc_health <= 0:
-            print("Hercules has died :(. Please try again!")
-            self.run_match()
         if mon_health <= 0:
             print("Hercules is victorious!")
-
+        if herc_health <= 0:
+            dead = 1
+            while dead == 1:
+                input("Hercules has died :( Please try again")
 
     def choose_reward(self):
         rew = randint(0,4)

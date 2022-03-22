@@ -23,7 +23,7 @@ class Hercules:
         confirm = 0
         while confirm != 1:
             for each in self.pot_move:
-                print(each)
+                print(each.name)
             add_choice = input("Which move would you like to learn?")
             for each in self.pot_move:
                 if each.name == add_choice:
