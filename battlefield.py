@@ -11,7 +11,6 @@ class Battlefield:
         self.display_welcome()
         self.battle()
         self.display_winners()
-        self.choose_reward()
 
     def display_welcome(self):
         print(f'A wild {self.bushel.mons[0].name} appears.')
@@ -51,7 +50,3 @@ class Battlefield:
             while dead == 1:
                 input("Hercules has died :( Please try again")
 
-    def choose_reward(self):
-        rew = randint(0,4)
-        if rew == 4:
-            self.herc.add_move()

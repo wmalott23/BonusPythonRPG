@@ -1,4 +1,6 @@
 from battlefield import Battlefield
+from hercules import Hercules
+from random import randint
 
 class Storyline:
     def __init__(self):
@@ -11,9 +13,15 @@ class Storyline:
         self.battle_four = Battlefield(4)
         self.battle_five = Battlefield(5)
         self.battle_six = Battlefield(6)
+        self.herc = Hercules()
+
+    def choose_reward(self):
+        rew = randint(3,4)
+        if rew == 4:
+            self.herc.add_move()
 
     def run_game(self):
-        self.intro()
+        # self.intro()
         self.nem_lion()
 
     def intro(self):
@@ -120,16 +128,18 @@ class Storyline:
         print("Soon after rushing over to see if Zeus was ok, a monster hops out from behind a bush!")
         input("press any key to continue")
         self.battle_one.run_match()
+        self.choose_reward()
         print("Gah! The surprise enemy yells as he is beaten")
         input("press any key to continue")
         print("Zeus crawls out of the hole, and lays down at the top of the hole for a second, catching his breathe")
         input("press any key to continue")
         print("Great job Hercules! You really showed that Goblin who was boss!")
         input("press any key to continue")
-        print("Suddenly, another Goblin jumps out from behind another bush!")
+        print("Suddenly, an animal jumps out from behind another bush!")
         input("press any key to continue")
         self.battle_two.run_match()
-        print("Zeus: Great hit Hercules, but we have to get out of here before we get swarmed by more of those goblin pokemon!")
+        self.choose_reward()
+        print("Zeus: Great hit Hercules, but we have to get out of here before we get swarmed by more of those pokemon!")
         input("press any key to continue")
         print("Zeus and Hercules hurry out of the woods as fast as they can, trying to get away before any more goblins appear")
         input("press any key to continue")
@@ -144,12 +154,15 @@ class Storyline:
         print("Goblin Attack! They were not wary enough!")
         input("press any key to continue")
         self.battle_onetwo.run_match()
+        self.choose_reward()
         print("Ok, these goblins have to stop attack us, this is getting kind of old")
         input("press any key to continue")
         print("Zeus did not realize, but during the scuffle between Hercules and the Goblin, the statue had come to life!")
         input("press any key to continue")
         print("Nemeaeaeaen Lion attack!")
         self.battle_four.run_match()
+        self.choose_reward()
+        self.choose_reward()
         print("The pair successful defeated the Nemeaeeaeaeaean Lion!")
         input("press any key to continue")
         print("Zeus: Great job Hercules!")

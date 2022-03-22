@@ -27,8 +27,8 @@ class Bushel:
             mon_choice = mons[num]
             self.mons[0] = mon_choice
         if set_num == 4:
-            self.mons[0] = Monster("Nemean Lion", 100, [Moves("Roar", 25), Moves("Swipe", 50), Moves("Smol Punch", 20)])
+            self.mons[0] = Monster("Nemean Lion", 100, [Moves("Roar", 25), Moves("Swipe", 30), Moves("Smol Punch", 20)])
         if set_num == 5:
-            self.mons[0] = Monster("Lernaean Hydra", 100, [Moves("Roar", 25), Moves("Swipe", 50), Moves("Smol Punch", 20)])
+            self.mons[0] = Monster("Lernaean Hydra", 100, [Moves("Roar", 25), Moves("Swipe", 30), Moves("Smol Punch", 20)])
         if set_num == 6:
-            self.mons[0] = Monster("Cerberus", 100, [Moves("Roar", 25), Moves("Swipe", 50), Moves("Smol Punch", 20)])
+            self.mons[0] = Monster("Cerberus", 100, [Moves("Roar", 25), Moves("Swipe", 30), Moves("Smol Punch", 20)])
