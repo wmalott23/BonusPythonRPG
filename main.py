@@ -20,4 +20,7 @@
  
 # As a developer, I want all of my functions to have a Single 
 # Responsibility. Remember, each function should do just one thing!  
- 
+from storyline import Storyline
+
+story = Storyline()
+story.run_game()

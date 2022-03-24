@@ -2,13 +2,18 @@ from moves import Moves
 
 move = [Moves("Smol Punch", 20)]
 pot_moveset = [Moves("Big Punch", 40), Moves("Falcon Punch", 60), Moves("Hyper Beam", 100)]
+health = 99
 
 class Hercules:
     def __init__(self):
-        self.health = 99
+        self.health = health
         self.att_dam = 0
         self.moveset = move
         self.pot_move = pot_moveset
+
+    def health_ret(self):
+        if self.health != 99:
+            self.health += 40
 
     def attack(self):
         confirm = 0
@@ -24,7 +29,7 @@ class Hercules:
 
     def add_move(self):
         confirm = 0
-        while confirm != 1:
+        while confirm != 1 and self.pot_move != []:
             for each in pot_moveset:
                 print(each.name)
             add_choice = input("Which move would you like to learn?")

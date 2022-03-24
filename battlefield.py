@@ -2,10 +2,12 @@ from hercules import Hercules
 from bushel import Bushel
 from random import randint
 
+
 class Battlefield:
     def __init__(self, bush_num):
         self.herc = Hercules()
         self.bushel = Bushel(bush_num)
+
 
     def run_match(self):
         self.display_welcome()
