@@ -15,6 +15,7 @@ class Storyline:
         # self.intro()
         self.nem_lion()
 
+                    
     def intro(self):
         print("Zeus was a young boy from Pallet Town. Tomorrow, Zeus will turn 10 years old and finally be able to get his Pokemon License")
         input("press any key to continue")
