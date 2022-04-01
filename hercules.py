@@ -11,9 +11,6 @@ class Hercules:
         self.moveset = move
         self.pot_move = pot_moveset
 
-    def health_ret(self):
-        if self.health != 99:
-            self.health += 40
 
     def attack(self):
         confirm = 0
